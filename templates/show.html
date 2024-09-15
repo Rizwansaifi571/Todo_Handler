@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>Your Todo List</h1>
+    <ul>
+        {% for todo in todos %}
+        <li>{{ todo.sno }} - {{ todo.title }}: {{ todo.desc }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
