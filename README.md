@@ -84,4 +84,3 @@ Enjoy task management with **Todo Handler**! 🎉
 
 ---
 
-I hope this README file adds a great touch to your repository! You can replace the `path_to_screenshot` with the actual paths for any screenshots you want to include.
