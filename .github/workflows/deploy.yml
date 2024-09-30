@@ -21,14 +21,16 @@ jobs:
       - name: Install dependencies
         run: |
           python -m venv venv
-          source venv/bin/activate
+          # Activate virtual environment
+          . venv/bin/activate
           pip install -r requirements.txt
 
       - name: Run tests
         run: |
-          source venv/bin/activate
+          . venv/bin/activate
           pytest  # Make sure to include test files
 
       - name: Deploy to Render
         run: |
+          . venv/bin/activate
           curl -X POST "https://api.render.com/deploy/srv-crk62vd2ng1s73fpt7ug?key=${{ secrets.RENDER_API_KEY }}"
