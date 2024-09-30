@@ -80,6 +80,10 @@
             .btn {
                 width: 100%;
             }
+
+            .container {
+                padding: 15px;
+            }
         }
 
         /* Additional Styling */
@@ -93,6 +97,23 @@
         .form-control,
         .btn-dark {
             margin-bottom: 15px;
+        }
+
+        /* Improved Responsiveness for Larger Screens */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 600px; /* Limit the width for better readability */
+                margin: auto; /* Center the container */
+            }
+        }
+
+        /* Improved Button and Input Styles */
+        .form-control {
+            padding: 10px;
+        }
+
+        .btn-dark {
+            padding: 10px 20px;
         }
     </style>
 </head>
