@@ -3,7 +3,7 @@ name: Deploy to Render
 on:
   push:
     branches:
-      - main  # Trigger the action on push to 'main'
+      - master  # Trigger the action on push to 'master'
 
 jobs:
   deploy:
@@ -31,4 +31,4 @@ jobs:
 
       - name: Deploy to Render
         run: |
-          curl -X POST 'https://api.render.com/deploy/srv-crk62vd2ng1s73fpt7ug?key=mJ6WcVJxZoU'
+          curl -X POST "https://api.render.com/deploy/srv-crk62vd2ng1s73fpt7ug?key=${{ secrets.RENDER_API_KEY }}"
